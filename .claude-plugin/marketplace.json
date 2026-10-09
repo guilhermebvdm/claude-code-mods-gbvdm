@@ -1,0 +1,15 @@
+{
+  "name": "gbvdm-mods",
+  "description": "Mods for Claude Code by guilhermebvdm",
+  "owner": {
+    "name": "guilhermebvdm",
+    "url": "https://github.com/guilhermebvdm"
+  },
+  "plugins": [
+    {
+      "name": "painel-sessao",
+      "source": "./plugins/painel-sessao",
+      "description": "Session panel: steps with the current one marked, decisions waiting for you, a queue of next prompts with auto-send, your last messages, notes, and context and plan limits. Portuguese (Brazil) and English."
+    }
+  ]
+}

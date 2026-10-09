@@ -1,0 +1,4 @@
+{
+  "description": "The painel-sessao hooks module",
+  "modules": ["./register.tsx"]
+}

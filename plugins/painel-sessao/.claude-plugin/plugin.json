@@ -1,0 +1,41 @@
+{
+  "name": "painel-sessao",
+  "version": "0.2.0",
+  "description": "Session panel for Claude Code: the steps of the session with the current one marked, the decisions waiting for you, a queue of next prompts with auto-send, your last messages, notes, and the context window and plan limits. In Portuguese (Brazil) and English.",
+  "author": {
+    "name": "guilhermebvdm",
+    "url": "https://github.com/guilhermebvdm"
+  },
+  "homepage": "https://github.com/guilhermebvdm/claude-code-mods-gbvdm",
+  "repository": "https://github.com/guilhermebvdm/claude-code-mods-gbvdm",
+  "license": "MIT",
+  "keywords": ["mod", "panel", "session", "steps", "prompt queue", "painel"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language / Idioma",
+      "description": "Language of the panel: pt-BR (Português do Brasil) or en (English).",
+      "options": ["pt-BR", "en"],
+      "default": "pt-BR"
+    },
+    "timeZone": {
+      "type": "string",
+      "title": "Time zone / Fuso horário",
+      "description": "IANA time zone name the panel shows times in, such as America/Sao_Paulo or Europe/Lisbon. Leave it empty to use the time zone of the system.",
+      "default": ""
+    },
+    "openOnStart": {
+      "type": "boolean",
+      "title": "Open the pane when a session starts / Abrir o painel no início da sessão",
+      "description": "When on, the pane opens by itself once in each new session. When off, open it with /painel (or /panel).",
+      "default": true
+    },
+    "answerLine": {
+      "type": "boolean",
+      "title": "Line under each answer / Linha sob cada resposta",
+      "description": "When on, each answer ends with one line: the date, when you asked, when the answer ended and how long it took.",
+      "default": true
+    }
+  }
+}
